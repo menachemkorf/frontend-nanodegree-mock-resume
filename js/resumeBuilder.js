@@ -18,7 +18,7 @@ var work = {
             "title" : "Kashrus",
             "position" : "Mashgiach",
             "employer" : "Yeshiva College",
-            "location" : "Melbourne",
+            "location" : "Melbourne, Australia",
             "dates" : "2015",
             "description" : "Sometimes i copy paste something in a haml ruby file, i indent it at 2 spaces, but when i push it up to github, the indentation is all wrong and not only the part I've copy pasted. In my editor looks good."
         },
@@ -26,7 +26,7 @@ var work = {
             "title" : "Kollel",
             "position" : "Researcher",
             "employer" : "Chabad of Midtown",
-            "location" : "New York",
+            "location" : "New York, USA",
             "dates" : "2012 - 2014",
             "description" : "Sometimes i copy paste something in a haml ruby file, i indent it at 2 spaces, but when i push it up to github, the indentation is all wrong and not only the part I've copy pasted. In my editor looks good."
         },
@@ -34,7 +34,7 @@ var work = {
             "title" : "Teaching",
             "position" : "Teacher",
             "employer" : "Mesivta Menachem",
-            "location" : "Staten Island, NY",
+            "location" : "Staten Island, NY, USA",
             "dates" : "2009",
             "description" : "Sometimes i copy paste something in a haml ruby file, i indent it at 2 spaces, but when i push it up to github, the indentation is all wrong and not only the part I've copy pasted. In my editor looks good."
         }
@@ -134,3 +134,7 @@ $(document).click(function(loc) {
     logClicks(x,y);
 });
 */
+
+$("#mapDiv").append(googleMap);
+
+initializeMap();
