@@ -48,7 +48,7 @@ var education = {
             name : "Chabad of Midtown Kollel",
             location : "New York",
             degree : "N/A",
-            majors : ["Rabbinic Studies", "Chassidus"], 
+            majors : ["Rabbinic Studies", "Chassidus"],
             date : 2014,
             url : "http://www.chabadmidtown.com"
         },
@@ -56,7 +56,7 @@ var education = {
             name : "Crown Hieghts Kollel",
             location : "New York",
             degree : "N/A",
-            majors : ["Rabbinic Studies"], 
+            majors : ["Rabbinic Studies"],
             date : 2012,
             url : "N/A"
         }
@@ -94,7 +94,7 @@ var work = {
             title : "Mashgiach",
             location : "Melbourne, Australia",
             dates : "2015",
-            description : "Sometimes i copy paste something in a haml ruby file, i indent it at 2 spaces, but when i push it up to github, the indentation is all wrong and not only the part I've copy pasted. In my editor looks good."           
+            description : "Sometimes i copy paste something in a haml ruby file, i indent it at 2 spaces, but when i push it up to github, the indentation is all wrong and not only the part I've copy pasted. In my editor looks good."
         },
         {
             employer : "Chabad of Midtown",
@@ -112,7 +112,18 @@ var work = {
         }
     ],
     display : function () {
-        //TODO
+        for (job in work.jobs) {
+            $('#workExperience').append(HTMLworkStart);
+
+            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+            var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+            var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+            var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+
+            var formattedData = formattedEmployer + formattedTitle + formattedDates + formattedLocation + formattedDescription;
+            $('.work-entry').last().append(formattedData);
+        }
     }
 };
 
@@ -138,3 +149,4 @@ var projects = {
 };
 
 bio.display();
+work.display();
