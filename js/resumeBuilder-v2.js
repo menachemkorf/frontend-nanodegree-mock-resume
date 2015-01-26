@@ -48,7 +48,7 @@ var education = {
             name : "Chabad of Midtown Kollel",
             location : "New York",
             degree : "N/A",
-            majors : ["Rabbinic Studies", "Chassidus"],
+            majors : ["Advanced Rabbinic Studies", "Chassidus"],
             date : 2014,
             url : "http://www.chabadmidtown.com"
         },
@@ -56,9 +56,17 @@ var education = {
             name : "Crown Hieghts Kollel",
             location : "New York",
             degree : "N/A",
-            majors : ["Rabbinic Studies"],
+            majors : ["Advanced Rabbinic Studies"],
             date : 2012,
             url : "N/A"
+        },
+        {
+            name : "Rabbinical Collage of America",
+            location : "Morristown, New Jersey",
+            degree : "Rabbinic Ordination",
+            majors : ["Rabbinic Studies"],
+            date : 2009,
+            url : "http://www.rca.edu/"
         }
     ],
     onlineCourses : [
@@ -69,7 +77,7 @@ var education = {
             URL : "http://teamtreehouse.com/library/build-a-simple-php-application"
         },
         {
-            title : "",
+            title : "HTML and CSS",
             school : "Udacity",
             date : 2015,
             URL : "https://www.udacity.com/course/nd001"
@@ -77,12 +85,36 @@ var education = {
         {
             title : "JavaScript",
             school : "Udacity",
-            dates : 2015,
+            date : 2015,
             URL : "https://www.udacity.com/course/nd001"
         }
     ],
     display : function () {
-        //TODO
+        for (school in education.schools) {
+            $('#education').append(HTMLschoolStart);
+
+            var formattedName = HTMLschoolName.replace("%data%", this.schools[school].name);
+            var formattedDegree = HTMLschoolDegree.replace("%data%", this.schools[school].degree);
+            var formattedDates = HTMLschoolDates.replace("%data%", this.schools[school].date);
+            var formattedLocation = HTMLschoolLocation.replace("%data%", this.schools[school].location);
+            var formattedMajor = HTMLschoolMajor.replace("%data%", this.schools[school].majors);
+
+            var formattedSchoolData = formattedName + formattedDegree + formattedDates + formattedLocation + formattedMajor;
+            $('.education-entry').last().append(formattedSchoolData);
+        }
+
+        $('#education').append(HTMLonlineClasses);
+        for (course in education.onlineCourses) {
+            $('#education').append(HTMLschoolStart);
+
+            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", this.onlineCourses[course].title);
+            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", this.onlineCourses[course].school);
+            var formattedOnlineDates = HTMLonlineDates.replace("%data%", this.onlineCourses[course].date);
+            var formattedOnlineURL = HTMLonlineURL.replace("%data%", this.onlineCourses[course].URL);
+
+            var formattedOnlineData = formattedOnlineTitle + formattedOnlineSchool + formattedOnlineDates + formattedOnlineURL;
+            $('.education-entry').last().append(formattedOnlineData);
+        }
     }
 };
 
@@ -107,7 +139,7 @@ var work = {
             employer : "Mesivta Menachem",
             title : "Teacher",
             location : "Staten Island, NY, USA",
-            dates : "2008 - 2009",
+            dates : "2009 - 2010",
             description : "Sometimes i copy paste something in a haml ruby file, i indent it at 2 spaces, but when i push it up to github, the indentation is all wrong and not only the part I've copy pasted. In my editor looks good."
         }
     ],
@@ -150,3 +182,4 @@ var projects = {
 
 bio.display();
 work.display();
+education.display();
