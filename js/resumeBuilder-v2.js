@@ -8,7 +8,7 @@ var bio = {
         twitter : "N/A",
         location: "Melbourne, Australia"
     },
-    bioPic : "images/bio_photo.jpg",
+    bioPic : "images/fry.jpg",
     welcomeMessage : "I can do all your front-end web-development work",
     skills : ["Fast Lerner", "Excellent Grasp", "Works Well in a Team"],
 
