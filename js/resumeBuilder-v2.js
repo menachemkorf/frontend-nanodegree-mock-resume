@@ -176,7 +176,7 @@ var projects = {
 
     ],
     display : function () {
-        //TODO
+        console.log(projects.project[0].title);
     }
 };
 
