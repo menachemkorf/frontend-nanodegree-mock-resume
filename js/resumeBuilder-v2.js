@@ -104,16 +104,17 @@ var education = {
         }
 
         $('#education').append(HTMLonlineClasses);
-        for (course in education.onlineCourses) {
+        for (var i = 0; i < education.onlineCourses.length; i++) {
             $('#education').append(HTMLschoolStart);
 
-            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", this.onlineCourses[course].title);
-            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", this.onlineCourses[course].school);
-            var formattedOnlineDates = HTMLonlineDates.replace("%data%", this.onlineCourses[course].date);
-            var formattedOnlineURL = HTMLonlineURL.replace("%data%", this.onlineCourses[course].URL);
+            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", this.onlineCourses[i].title);
+            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", this.onlineCourses[i].school);
+            var formattedOnlineDates = HTMLonlineDates.replace("%data%", this.onlineCourses[i].date);
+            var formattedOnlineURL = HTMLonlineURL.replace("%data%", this.onlineCourses[i].URL);
 
             var formattedOnlineData = formattedOnlineTitle + formattedOnlineSchool + formattedOnlineDates + formattedOnlineURL;
             $('.education-entry').last().append(formattedOnlineData);
+            $('.education-entry').last().find('a').attr("href", this.onlineCourses[i].URL);
         }
     }
 };
@@ -165,13 +166,13 @@ var projects = {
             title : "shirts4mike",
             dates : "2014",
             description : "ecommerce website",
-            images : ["images/197x148.gif", "images/197x148.gif"]
+            images : ["images/fry.jpg", "images/fry.jpg"]
         },
         {
             title : "blog",
             dates : "2014",
             description : "wordpress",
-            images : ["images/197x148.gif", "images/197x148.gif"]
+            images : ["images/fry.jpg", "images/fry.jpg"]
         }
 
     ],
