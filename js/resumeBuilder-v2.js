@@ -193,7 +193,12 @@ var projects = {
     }
 };
 
+var displayMap = function() {
+    $('#mapDiv').append(mapDiv);
+}
+
 bio.display();
 work.display();
 education.display();
 projects.display();
+displayMap();
