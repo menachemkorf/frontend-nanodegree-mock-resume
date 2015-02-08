@@ -82,12 +82,12 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 34px;
+  font-family: Lobster;
+  font-size: 46px;
   color: #F3F3F3;
-  line-height: 40px;
   text-align: center;
   margin-top: 50px;
+  letter-spacing: 2px;
 }
 
 .welcome-message::first-letter {
