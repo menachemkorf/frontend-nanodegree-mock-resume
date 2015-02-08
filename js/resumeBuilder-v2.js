@@ -1,15 +1,15 @@
 var bio = {
-    name : "Menachem Korf",
-    role : "Web Developer",
+    name : "John Doe",
+    role : "WEB DEVELOPER",
     contacts : {
-        mobile : "0468425770",
-        email : "menachemkorf@gmail.com",
-        github : "menachemkorf",
-        twitter : "N/A",
+        mobile : "5555555555",
+        email : "example@example.com",
+        github : "example",
+        twitter : "example",
         location: "Melbourne, Australia"
     },
     bioPic : "images/fry.jpg",
-    welcomeMessage : "I can do all your front-end web-development work",
+    welcomeMessage : "I can do all your <br> front-end web-development work",
     skills : ["Fast Lerner", "Excellent Grasp", "Works Well in a Team"],
 
 
@@ -32,11 +32,11 @@ var bio = {
         $('#header').append(formattedBioPic + formattedWelcomeMsg);
 
         if (bio.skills) {
-            $('#header').append(HTMLskillsStart);
+            //$('#header').append(HTMLskillsStart);
 
             for (var i = 0; i < bio.skills.length; i++) {
                 var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
-                $('#header').append(formattedSkills);
+                //$('#header').append(formattedSkills);
             }//end for
         }//end if
     }//end function
@@ -53,7 +53,7 @@ var education = {
             url : "http://www.chabadmidtown.com"
         },
         {
-            name : "Crown Hieghts Kollel",
+            name : "Crown Heights Kollel",
             location : "New York",
             degree : "N/A",
             majors : ["Advanced Rabbinic Studies"],
@@ -74,19 +74,19 @@ var education = {
             title : "build-a-simple-php-application",
             school : "Treehouse",
             date : 2014,
-            URL : "http://teamtreehouse.com/library/build-a-simple-php-application"
+            url : "http://teamtreehouse.com/library/build-a-simple-php-application"
         },
         {
             title : "HTML and CSS",
             school : "Udacity",
             date : 2015,
-            URL : "https://www.udacity.com/course/nd001"
+            url : "https://www.udacity.com/course/nd001"
         },
         {
             title : "JavaScript",
             school : "Udacity",
             date : 2015,
-            URL : "https://www.udacity.com/course/nd001"
+            url : "https://www.udacity.com/course/nd001"
         }
     ],
     display : function () {
@@ -107,14 +107,14 @@ var education = {
         for (var i = 0; i < education.onlineCourses.length; i++) {
             $('#education').append(HTMLschoolStart);
 
-            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", this.onlineCourses[i].title);
-            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", this.onlineCourses[i].school);
-            var formattedOnlineDates = HTMLonlineDates.replace("%data%", this.onlineCourses[i].date);
-            var formattedOnlineURL = HTMLonlineURL.replace("%data%", this.onlineCourses[i].URL);
+            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
+            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+            var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].date);
+            var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
 
             var formattedOnlineData = formattedOnlineTitle + formattedOnlineSchool + formattedOnlineDates + formattedOnlineURL;
             $('.education-entry').last().append(formattedOnlineData);
-            $('.education-entry').last().find('a').attr("href", this.onlineCourses[i].URL);
+            $('.education-entry').last().find('a').attr("href", education.onlineCourses[i].url);
         }
     }
 };

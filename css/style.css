@@ -18,6 +18,8 @@ h1 {
   color: #F5A623;
   line-height: 48px;
   display: inline;
+  margin-right: 25px;
+  font-weight: 100;
 }
 
 h2 {
@@ -81,9 +83,15 @@ a {
 
 .welcome-message {
   font-style: italic;
-  font-size: 18px;
+  font-size: 34px;
   color: #F3F3F3;
-  line-height: 28px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.welcome-message::first-letter {
+  color: #F5A623;
 }
 
 #skillsH3 {
@@ -100,7 +108,7 @@ a {
 }
 
 .white-text {
-  font-weight: bold;
+  /*font-weight: bold;*/
   color: #FFFFFF;
 }
 
