@@ -71,22 +71,22 @@ var education = {
     ],
     onlineCourses : [
         {
-            title : "build-a-simple-php-application",
+            title : "Build a Simple PHP Application",
             school : "Treehouse",
             date : 2014,
-            URL : "http://teamtreehouse.com/library/build-a-simple-php-application"
+            url : "http://teamtreehouse.com/library/build-a-simple-php-application"
         },
         {
             title : "HTML and CSS",
             school : "Udacity",
             date : 2015,
-            URL : "https://www.udacity.com/course/nd001"
+            url : "https://www.udacity.com/course/ud304"
         },
         {
             title : "JavaScript",
             school : "Udacity",
             date : 2015,
-            URL : "https://www.udacity.com/course/nd001"
+            url : "https://www.udacity.com/course/ud804"
         }
     ],
     display : function () {
@@ -107,14 +107,14 @@ var education = {
         for (var i = 0; i < education.onlineCourses.length; i++) {
             $('#education').append(HTMLschoolStart);
 
-            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", this.onlineCourses[i].title);
-            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", this.onlineCourses[i].school);
-            var formattedOnlineDates = HTMLonlineDates.replace("%data%", this.onlineCourses[i].date);
-            var formattedOnlineURL = HTMLonlineURL.replace("%data%", this.onlineCourses[i].URL);
+            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
+            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+            var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].date);
+            var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
 
-            var formattedOnlineData = formattedOnlineTitle + formattedOnlineSchool + formattedOnlineDates + formattedOnlineURL;
+            var formattedOnlineData = formattedOnlineTitle + formattedOnlineSchool + formattedOnlineDates;
             $('.education-entry').last().append(formattedOnlineData);
-            $('.education-entry').last().find('a').attr("href", this.onlineCourses[i].URL);
+            $('.education-entry').last().find('a').attr("href", education.onlineCourses[i].url);
         }
     }
 };
@@ -166,13 +166,15 @@ var projects = {
             title : "shirts4mike",
             dates : "2014",
             description : "ecommerce website",
-            images : ["images/fry.jpg", "images/fry.jpg"]
+            images : ["images/fry.jpg", "images/fry.jpg"],
+            url : "https://github.com/example/test"
         },
         {
             title : "blog",
             dates : "2014",
             description : "wordpress",
-            images : ["images/fry.jpg", "images/fry.jpg"]
+            images : ["images/fry.jpg", "images/fry.jpg"],
+            url : "https://github.com/example/test"
         }
 
     ],
@@ -189,6 +191,7 @@ var projects = {
             for (var j = 0; j < projects.project.length; j++) {
                 var formattedImage = HTMLprojectImage.replace("%data%", projects.project[i].images[j]);
                 $('.project-entry').last().append(formattedImage);
+                $('.project-entry').last().find('a').attr("href", projects.project[i].url);
             }
         }
     }
