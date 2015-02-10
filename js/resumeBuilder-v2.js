@@ -31,7 +31,7 @@ var bio = {
         var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
         $('#header').append(formattedBioPic + formattedWelcomeMsg);
 
-        if (bio.skills) {
+        if (bio.skills[0]) {
             $('#header').append(HTMLskillsStart);
 
             for (var i = 0; i < bio.skills.length; i++) {
