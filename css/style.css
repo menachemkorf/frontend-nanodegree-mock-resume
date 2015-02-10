@@ -234,6 +234,10 @@ hr {
   margin: 15px 5%;
 }
 
+.education-entry {
+  margin-bottom: 24px;
+}
+
 #top-nav {
   height: 50px;
   text-align: center;
