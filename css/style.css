@@ -229,3 +229,7 @@ span {
     display: block;
   }
 }
+
+hr {
+  margin: 15px 5%;
+}
