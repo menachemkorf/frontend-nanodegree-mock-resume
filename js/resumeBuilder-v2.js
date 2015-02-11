@@ -90,6 +90,7 @@ var education = {
         }
     ],
     display : function () {
+        $('#education').append(HTMLschools);
         for (var i = 0; i < education.schools.length; i++) {
             $('#education').append(HTMLschoolStart);
 
