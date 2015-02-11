@@ -11,6 +11,7 @@
 .education-entry, .work-entry, .project-entry {
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 24px;
 }
 
 h1 {
@@ -232,10 +233,6 @@ span {
 
 hr {
   margin: 15px 5%;
-}
-
-.education-entry {
-  margin-bottom: 24px;
 }
 
 #top-nav {
