@@ -246,3 +246,21 @@ hr {
 .top-nav-li {
   display: inline-block;
 }
+
+h2,
+h3 {
+  text-align: center;
+}
+
+#schools,
+#online {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin: auto;
+}
+
+#education {
+  width: 90%;
+  margin: auto;
+}
