@@ -164,17 +164,17 @@ var work = {
 var projects = {
     project : [
         {
-            title : "project 1",
+            title : "shirts4mike",
             dates : "2014",
-            description : "eCommerce website",
-            images : ["images/shirts4mike.png", "images/shirts4mike-list.png"],
+            description : "ecommerce website",
+            images : ["images/fry.jpg", "images/fry.jpg"],
             url : "https://github.com/example/test"
         },
         {
-            title : "project 2",
+            title : "blog",
             dates : "2014",
-            description : "eCommerce website",
-            images : ["images/shirts4mike.png", "images/shirts4mike-list.png"],
+            description : "wordpress",
+            images : ["images/fry.jpg", "images/fry.jpg"],
             url : "https://github.com/example/test"
         }
 
