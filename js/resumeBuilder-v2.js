@@ -1,15 +1,15 @@
 var bio = {
-    name : "Menachem Korf",
-    role : "Web Developer",
+    name : "John Doe",
+    role : "WEB DEVELOPER",
     contacts : {
-        mobile : "0468425770",
-        email : "menachemkorf@gmail.com",
-        github : "menachemkorf",
-        twitter : "N/A",
+        mobile : "5555555555",
+        email : "example@example.com",
+        github : "example",
+        twitter : "example",
         location: "Melbourne, Australia"
     },
     bioPic : "images/fry.jpg",
-    welcomeMessage : "I can do all your front-end web-development work",
+    welcomeMessage : "I can do all your <br> front-end web-development work",
     skills : ["Fast Lerner", "Excellent Grasp", "Works Well in a Team"],
 
 
@@ -31,12 +31,12 @@ var bio = {
         var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
         $('#header').append(formattedBioPic + formattedWelcomeMsg);
 
-        if (bio.skills[0]) {
-            $('#header').append(HTMLskillsStart);
+        if (bio.skills) {
+            //$('#header').append(HTMLskillsStart);
 
             for (var i = 0; i < bio.skills.length; i++) {
                 var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
-                $('#header').append(formattedSkills);
+                //$('#header').append(formattedSkills);
             }//end for
         }//end if
     }//end function
@@ -53,7 +53,7 @@ var education = {
             url : "http://www.chabadmidtown.com"
         },
         {
-            name : "Crown Hieghts Kollel",
+            name : "Crown Heights Kollel",
             location : "New York",
             degree : "N/A",
             majors : ["Advanced Rabbinic Studies"],
@@ -92,7 +92,7 @@ var education = {
     display : function () {
         $('#education').append(HTMLschools);
         for (var i = 0; i < education.schools.length; i++) {
-            $('#education').append(HTMLschoolStart);
+            $('#schools').append(HTMLschoolStart);
 
             var formattedName = HTMLschoolName.replace("%data%", education.schools[i].name);
             var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
@@ -106,7 +106,7 @@ var education = {
 
         $('#education').append(HTMLonlineClasses);
         for (var i = 0; i < education.onlineCourses.length; i++) {
-            $('#education').append(HTMLschoolStart);
+            $('#online').append(HTMLschoolStart);
 
             var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
             var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
