@@ -1,0 +1,14 @@
+resources:
+
+these websites helped me out a lot.
+
+http://css-tricks.com/
+https://www.youtube.com/
+http://stackoverflow.com/
+
+for resume style ideas:
+https://wrapbootstrap.com/themes/resumes-cv
+
+Additional notes:
+
+1. In index.html I have a nav-bar commented out because i haven't finished styling it yet. 
