@@ -10,7 +10,8 @@ var bio = {
     },
     bioPic : "images/fry.jpg",
     welcomeMessage : "I can do all your <br> front-end web-development work",
-    skills : ["Fast Lerner", "Excellent Grasp", "Works Well in a Team"],
+    skills : ["HTML 5", "CSS", "JavaScript", "PHP", "Web Developer", "Code Igniter", "WordPress", "Web Application", "mySQL",
+            "PHPmyAdmin", "jQuery", "Bootstrap", "Android"],
 
 
     display : function () {
@@ -32,11 +33,12 @@ var bio = {
         $('#header').append(formattedBioPic + formattedWelcomeMsg);
 
         if (bio.skills) {
-            //$('#header').append(HTMLskillsStart);
+            //$('#skills-section').append(HTMLskillsStart);
 
             for (var i = 0; i < bio.skills.length; i++) {
                 var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
-                //$('#header').append(formattedSkills);
+                //console.log(bio.skills[i]);
+                $('#skills-section ul').append(formattedSkills);
             }//end for
         }//end if
     }//end function
@@ -164,17 +166,17 @@ var work = {
 var projects = {
     project : [
         {
-            title : "shirts4mike",
+            title : "Project 1",
             dates : "2014",
-            description : "ecommerce website",
-            images : ["images/fry.jpg", "images/fry.jpg"],
+            description : "eCommerce website",
+            images : ["images/shirts4mike.png", "images/shirts4mike-list.png"],
             url : "https://github.com/example/test"
         },
         {
-            title : "blog",
+            title : "Project 2",
             dates : "2014",
-            description : "wordpress",
-            images : ["images/fry.jpg", "images/fry.jpg"],
+            description : "eCommerce website",
+            images : ["images/shirts4mike.png", "images/shirts4mike-list.png"],
             url : "https://github.com/example/test"
         }
 
