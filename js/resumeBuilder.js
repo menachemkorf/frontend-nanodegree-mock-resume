@@ -32,16 +32,11 @@ var bio = {
         var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
         $('#header').append(formattedBioPic + formattedWelcomeMsg);
 
-        if (bio.skills) {
-            //$('#skills-section').append(HTMLskillsStart);
-
-            for (var i = 0; i < bio.skills.length; i++) {
-                var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
-                //console.log(bio.skills[i]);
-                $('#skills-section ul').append(formattedSkills);
-            }//end for
-        }//end if
-    }//end function
+        for (var i = 0; i < bio.skills.length; i++) {
+            var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
+            $('#skills-section ul').append(formattedSkills);
+        }
+    }
 };
 
 var education = {
@@ -79,13 +74,13 @@ var education = {
             url : "http://teamtreehouse.com/library/build-a-simple-php-application"
         },
         {
-            title : "HTML and CSS",
+            title : "Intro to HTML and CSS",
             school : "Udacity",
             date : 2015,
             url : "https://www.udacity.com/course/ud304"
         },
         {
-            title : "JavaScript",
+            title : "JavaScript Basics",
             school : "Udacity",
             date : 2015,
             url : "https://www.udacity.com/course/ud804"

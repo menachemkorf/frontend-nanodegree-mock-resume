@@ -3,8 +3,8 @@ resources:
 these websites helped me out a lot.
 
 http://css-tricks.com/
-https://www.youtube.com/
 http://stackoverflow.com/
+https://www.youtube.com/
 
 for resume style ideas:
 https://wrapbootstrap.com/themes/resumes-cv

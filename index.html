@@ -36,19 +36,19 @@
             <h2>Skills</h2>
             <ul></ul>
         </div>
-        <hr class="seperator">
+        <hr class="section-seperator">
         <div id="workExperience">
             <h2>Work Experience</h2>
         </div>
-        <hr class="seperator">
+        <hr class="section-seperator">
         <div id="projects">
             <h2>Projects</h2>
         </div>
-        <hr class="seperator">
+        <hr class="section-seperator">
         <div id="education">
             <h2>Education</h2>
         </div>
-        <hr class="seperator">
+        <hr class="section-seperator">
         <div id="mapDiv">
             <h2>Where I've Lived and Worked</h2>
         </div>
@@ -63,6 +63,7 @@
 
     <script>
 
+        //remove sections that aren't populated, including the following hr seperater.
         if(document.getElementsByClassName('flex-item').length === 0) {
             document.getElementById('topContacts').style.display = 'none';
         }
