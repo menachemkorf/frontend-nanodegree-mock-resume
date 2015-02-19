@@ -2,13 +2,19 @@ resources:
 
 these websites helped me out a lot.
 
+for general code questions in CSS and JavaScript:
 http://css-tricks.com/
 http://stackoverflow.com/
 https://www.youtube.com/
 
 for resume style ideas:
 https://wrapbootstrap.com/themes/resumes-cv
+https://www.linkedin.com/
 
 Additional notes:
 
-1. In index.html I have a nav-bar commented out because i haven't finished styling it yet. 
+Not done styling yet, but completely functional.
+In index.html I have a nav-bar commented out because i haven't finished styling it yet.
+I added additional conditional code in the end of index.html, I found it easier to use jQuery but I didn't modify the existing code which is native JavaScript, so it might look inconsistent.
+I thought it looked better for the skills to be in its own section and not in the header, but I still left it in the bio object.
+Most of the css that I modified I added to the end of the file even if technically it would belong elsewhere.

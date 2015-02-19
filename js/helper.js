@@ -13,7 +13,6 @@ var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLWelcomeMsg = '<div class="welcome-message">%data%</div>';
 
 var HTMLul = '<ul></ul>';
-//var HTMLskillsStart = '<ul></ul>';
 var HTMLskills = '<li class="skill-entry">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
