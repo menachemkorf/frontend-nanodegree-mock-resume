@@ -10,7 +10,7 @@ var bio = {
     },
     bioPic : "images/fry.jpg",
     welcomeMessage : "I can do all your <br> front-end web-development work",
-    skills : ["HTML 5", "CSS", "JavaScript", "PHP", "Web Developer", "Code Igniter", "WordPress", "Web Application", "mySQL",
+    skills : ["HTML 5", "CSS", "JavaScript", "PHP", "Web Developer", "Codeigniter", "WordPress", "Web Applications", "mySQL",
             "PHPmyAdmin", "jQuery", "Bootstrap", "Android"],
 
 
