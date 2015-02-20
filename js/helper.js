@@ -9,7 +9,7 @@ var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
-var HTMLbioPic = '<img src="%data%" class="biopic">';
+var HTMLbioPic = '<img src="%data%" alt="Bio Image" class="biopic">';
 var HTMLWelcomeMsg = '<div class="welcome-message">%data%</div>';
 
 var HTMLul = '<ul></ul>';
@@ -26,7 +26,7 @@ var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<div class="project-snapshot"><img src="%data%"></div>';
+var HTMLprojectImage = '<div class="project-snapshot"><img src="%data%" alt="Project Snapshot"></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschools = '<div id="schools"><h3>Schools</h3></div>';

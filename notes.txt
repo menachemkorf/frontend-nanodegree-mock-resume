@@ -13,8 +13,8 @@ https://www.linkedin.com/
 
 Additional notes:
 
-Not done styling yet, but completely functional.
-In index.html I have a nav-bar commented out because i haven't finished styling it yet.
-I added additional conditional code in the end of index.html, I found it easier to use jQuery but I didn't modify the existing code which is native JavaScript, so it might look inconsistent.
-I thought it looked better for the skills to be in its own section and not in the header, but I still left it in the bio object.
-Most of the css that I modified I added to the end of the file even if technically it would belong elsewhere.
+1. Not done styling yet, but the site is completely functional.
+2. In index.html I have a nav-bar commented out because i haven't finished styling it yet (it works, just really ugly).
+3. I added additional conditional code in the end of index.html, I found it easier to use jQuery but I didn't modify the existing code which is native JavaScript, so it might look inconsistent.
+4. I thought it looked better for the skills to be in its own section and not in the header, but I still left it in the bio object.
+5. Most of the css that I modified I added to the end of the file, even if technically it should belong elsewhere.
